@@ -1,6 +1,10 @@
-.blogs{
-
+.body{
+  text-align:center;
+    margin-top: 100px;
 }
 .textColor{
-    color:aliceblue;
+    color:black;
+  }
+  .background{
+    background-color: white;
   }

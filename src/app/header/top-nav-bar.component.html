@@ -1,6 +1,4 @@
-<nav class="navbar sticky-top p-1" style="
-background-color:rgb(8, 34, 73);
-border-bottom: dimgrey solid 2px;">
+<nav class="navbar sticky-top p-1 bg" style="border-bottom: dimgrey solid 2px;">
 
   <li class="nav-item">
       <a class="navbar-brand" href="#">
@@ -12,17 +10,19 @@ border-bottom: dimgrey solid 2px;">
   </form>
   
     <div class = "navbar">
-          <a class="nav-link text-white " href="#">
+          <a  routerLink="/home" routerLinkActive="active" class="nav-link text-white" href="#">
             <svg class="bi" width="24" height="24" color="white">
-                <use xlink:href="bootstrap-icons.svg#house"></use>
+                <use xlink:href="bootstrap-icons.svg#house">
+
+                </use>
             </svg> 
             </a>
-          <a class="nav-link text-white" href="#">
+          <a  routerLink="/search-page" routerLinkActive="active" class="nav-link text-white" href="#">
             <svg class="bi" width="24" height="24" color="white">
               <use xlink:href="bootstrap-icons.svg#compass"></use>
             </svg> 
             </a>
-          <a class="nav-link text-white" href="#">
+          <a  routerLink="/your-library" routerLinkActive="active" class="nav-link text-white" href="#">
             <svg class="bi" width="24" height="24" color="white">
               <use xlink:href="bootstrap-icons.svg#envelope"></use>
             </svg> 
@@ -37,11 +37,42 @@ border-bottom: dimgrey solid 2px;">
                 <use xlink:href="bootstrap-icons.svg#lightning-charge"></use>
                     </svg> 
                     </a>
-              <a class="nav-link text-white" href="#">
+              
+              <div class="dropdown text-white">
+              
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                  <svg class="bi" width="24" height="24" color="white">
                     <use xlink:href="bootstrap-icons.svg#person"></use>
                   </svg> 
-                  </a>
+                </button>
+               
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">
+
+                      
+                      <a routerLink="/likes" routerLinkActive="active" class="nav-link text-primary" href="#">
+                        <svg class="bi" width="24" height="24" color="primary">
+                              <use xlink:href="bootstrap-icons.svg#heart"> </use>
+                            </svg> 
+                            Likes
+                            </a>
+                      </a></li>
+                    <li><a class="dropdown-item" href="#">
+                      <a routerLink="/following" routerLinkActive="active" class="nav-link text-primary" href="#">
+                        <svg class="bi" width="24" height="24" color="primary">
+                              <use xlink:href="bootstrap-icons.svg#person-plus-fill"> </use>
+                            </svg> 
+                            Following
+                            </a>
+                      </a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">What's new</a></li>
+                    <li><a class="dropdown-item" href="#">Help</a></li>
+                    <a class="dropdown-item" href="#">Keyboard shortcuts</a>
+                    <a class="dropdown-item" href="#">Change Pallette</a>
+                  </ul>
+              </div>  
+
               <a class="nav-link text-primary" href="#">
                 <svg class="bi" width="24" height="24" color="primary">
                       <use xlink:href="bootstrap-icons.svg#pencil"></use>
@@ -49,5 +80,3 @@ border-bottom: dimgrey solid 2px;">
                     </a>
               </div>      
   </nav>
-
-    PLACE HOLDER
