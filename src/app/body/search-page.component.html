@@ -1,6 +1,52 @@
-
-<h1 class="textColor bg">
-    Search/Explore page
-
-
-</h1>
+<div class="body bg">
+    <div class="row">
+        <div class="white bg bottomLine navbar">
+            <a class="nav-link text-danger" href="#">
+                {{title}}
+                <svg class="bi" width="24" height="24" color="text-danger">
+                    <use xlink:href="bootstrap-icons.svg#heart"></use>
+                </svg>
+            </a>
+            <a class="nav-link white" href="#">
+                {{trending}}
+                <svg class="bi" width="24" height="24" color="text-danger">
+                    <use xlink:href="bootstrap-icons.svg#truck"></use>
+                </svg>
+            </a>
+            <a class="nav-link white" href="#">
+                {{picks}}
+                <svg class="bi" width="24" height="24" color="text-warning">
+                    <use xlink:href="bootstrap-icons.svg#star"></use>
+                </svg>
+            </a>
+            <a class="nav-link white" href="#">
+                {{more}}
+                <svg class="bi" width="24" height="24" color="text-white">
+                    <use xlink:href="bootstrap-icons.svg#arrow-down-circle"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="col-3">
+            left col
+        </div>
+        <div class="col">
+            <div class="container-fluid">
+                <div class=".d-flex.flex-row">
+                <div *ngFor="let postCard of postCard">
+                    <post-card username={{postCard.username}}  ProfilePic={{postCard.ProfilePic}} ImagePath={{postCard.ImagePath}}>Loading posts</post-card>
+                </div>
+                <div *ngFor="let postCard of postCard">
+                    <post-card username={{postCard.username}}>Loading posts</post-card>
+                </div>
+                <div *ngFor="let postCard of postCard">
+                    <post-card username={{postCard.caption}}>Loading posts</post-card>
+                </div>
+                    <post-card>Loading posts</post-card>
+                    <post-card>Loading posts</post-card>
+                    <post-card>Loading posts</post-card>
+                </div>
+            </div>
+        </div>
+        <div class="col ps-0">
+            right col
+        </div>

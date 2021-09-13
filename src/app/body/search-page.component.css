@@ -3,5 +3,15 @@
     background-repeat: repeat-y;
 }
 .textColor{
-    color:aliceblue;
+    color:black;
+  }
+.white{
+  color:white;
+}
+.grid-container {
+    display: grid;
+    grid-auto-rows: 150px;
+  }
+.item1 {
+    grid-row-start: 2;
   }
