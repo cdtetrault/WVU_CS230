@@ -13,6 +13,10 @@ import { YourLibraryComponent } from './body/your-library.component';
 import { LikesComponent } from './body/likes.component';
 import { FollowingComponent } from './body/following.component';
 import { PostCardComponent } from './body/post-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
+
+
 
 @NgModule({
   declarations: [
@@ -26,11 +30,13 @@ import { PostCardComponent } from './body/post-card.component';
     YourLibraryComponent,
     LikesComponent,
     FollowingComponent,
-    PostCardComponent
+    PostCardComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
