@@ -15,5 +15,14 @@ export class SearchPageService {
         console.log(this.baseUrl= this.myInfoEndpoint);
         return this.http.get<SearchPage []>(this.baseUrl + this.myInfoEndpoint);
      }
-    
+    editUserInfo(){
+        var temp: SearchPage=  {
+            username: "Cristal",
+            mediaBar: "Tetrault",
+            caption: "http",
+            ProfilePic: "pfp",
+            ImagePath: "Picture post"
+        }
+        return this.http.put(this.baseUrl, temp )
+    }
 }

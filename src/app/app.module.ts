@@ -32,14 +32,8 @@ import { UserInfoComponent } from './header/user-info.component';
     LikesComponent,
     FollowingComponent,
     PostCardComponent,
-<<<<<<< HEAD
     UserInfoComponent,
-    UserInfoComponent,
-    SearchPageComponent,
     SearchPageComponent
-=======
-    UserInfoComponent
->>>>>>> 2d27afb653184d103da8dae341da1d6247344f54
   ],
   imports: [
     BrowserModule,

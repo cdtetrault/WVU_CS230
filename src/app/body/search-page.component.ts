@@ -49,11 +49,16 @@ export class SearchPageComponent implements OnInit{
     }
     ngOnInit(): void {
         console.log("Showing data");
+        this.showUserInfo;
+        this.SearchPageService.editUserInfo().subscribe(data =>{
+            console.log(data);
+        })
        // this.showSearchPage();
     }
     showUserInfo(){
         this.SearchPageService.getSearchPage().subscribe((data:SearchPage)=>{
             console.log(data);
+            this.posts=data;
             for(var item in data){
                 console.log(data);
             }

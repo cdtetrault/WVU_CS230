@@ -1,14 +1,9 @@
 import { HttpClient } from "@angular/common/http";
-<<<<<<< HEAD
-import { Component, OnInit } from "@angular/core";
-import { UserInfo } from "./user-info.model";
 import { UserInfoService } from "./user-info.service";
-
-=======
 import { Component,Injectable, OnInit } from "@angular/core";
 import { UserInfo } from "./user-info.model";
 @Injectable()
->>>>>>> 2d27afb653184d103da8dae341da1d6247344f54
+
 
 @Component({
     selector:'user-info',
