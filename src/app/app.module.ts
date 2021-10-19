@@ -14,7 +14,8 @@ import { LikesComponent } from './body/likes.component';
 import { FollowingComponent } from './body/following.component';
 import { PostCardComponent } from './body/post-card.component';
 import { HttpClientModule } from '@angular/common/http';
-import { UserInfoComponent } from './header/user-info.component'
+import { UserInfoComponent } from './header/user-info.component';
+
 
 
 
@@ -31,10 +32,14 @@ import { UserInfoComponent } from './header/user-info.component'
     LikesComponent,
     FollowingComponent,
     PostCardComponent,
+<<<<<<< HEAD
     UserInfoComponent,
     UserInfoComponent,
     SearchPageComponent,
     SearchPageComponent
+=======
+    UserInfoComponent
+>>>>>>> 2d27afb653184d103da8dae341da1d6247344f54
   ],
   imports: [
     BrowserModule,
