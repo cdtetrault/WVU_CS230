@@ -41,8 +41,23 @@
                 <div *ngFor="let postCard of postCard">
                     <post-card username={{postCard.caption}}>Loading posts</post-card>
                 </div>
-                    <post-card>Loading posts</post-card>
-                    <post-card>Loading posts</post-card>
+                    From Firebase
+                    <p *ngIf="posts==undefined"> Failed fetching from server</p>
+
+<div *ngIf="posts!=undefined">
+    <div class="container-fluid">
+        <div class="d-flex flex-row justify-content-between">
+            <div class="flex-column">
+                username:{{posts.username}}</div>
+            <div class="flex-column">
+                mediaBar:{{posts.mediaBar}}</div>
+            <div class="flex-column">
+                caption:{{posts.caption}}
+            </div>
+        </div>
+    </div>
+</div>
+                    Regular post card
                     <post-card>Loading posts</post-card>
                 </div>
             </div>

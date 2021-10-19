@@ -6,7 +6,6 @@ export const mock_post= [
         caption:"whatever caption you want",
         mediaBar:"bar on the bottom with icons",
     },
-
     {
         username:"besttumblrposts",
         ProfilePic:"profilePic",
