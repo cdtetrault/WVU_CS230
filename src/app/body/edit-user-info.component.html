@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form #postForm="ngForm" (ngSubmit)= "onEditUserInfo(postForm.value)">
+                <div class="input-group">
+                 <span class="input-group-text" id="">First and last name</span>
+                    <input type="text" id= "FirstName" class="form-control" ngModel name="FirstName">
+                    <input type="text" id = "LastName" class="form-control" ngModel name="LastName">
+                  </div>
+                  <div class="input-group">
+                      <span class="input-group-text" id="basic-addon3">GitHub URL: </span>
+                    <input type="text" class="form-control" id="GitHub"
+                     aria-describedby="basic-addon3"
+                     ngModel name="GitHub">
+                  </div>
+
+                  <div class="input-group">
+                    <span class="input-group-text" id="">MIX ID: </span>
+                       <input type="text" id= "mix_id" class="form-control" ngModel name="mix_id">
+                     </div>
+
+                  <button class="btn btn-primary" type="submit">
+                    Update Info
+                  </button>
+                
+            </form>
+        </div>
+    </div>
+</div>

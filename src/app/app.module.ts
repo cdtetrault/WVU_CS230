@@ -15,6 +15,8 @@ import { FollowingComponent } from './body/following.component';
 import { PostCardComponent } from './body/post-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
+import { EditUserInfoComponent } from './body/edit-user-info.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -33,12 +35,13 @@ import { UserInfoComponent } from './header/user-info.component';
     FollowingComponent,
     PostCardComponent,
     UserInfoComponent,
-    SearchPageComponent
+    EditUserInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
