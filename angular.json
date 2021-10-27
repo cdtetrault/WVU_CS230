@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "tumblr:build:production",
+            "firebaseProject": "tumblr-3a8a4",
+            "firebaseHostingSite": "tumblr-3a8a4"
+          }
         }
       }
     }

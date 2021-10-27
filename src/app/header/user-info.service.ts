@@ -13,6 +13,6 @@ export class UserInfoService {
         return this.http.get<UserInfo>(this.url);
     }
     editUserInfo(data: UserInfo){
-     return this.http.put(this.url, data);
+     return this.http.post(this.url, data);
     }
 }

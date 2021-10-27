@@ -17,8 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
 import { EditUserInfoComponent } from './body/edit-user-info.component';
 import { FormsModule } from '@angular/forms';
-
-
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
 
 
 @NgModule({
@@ -41,7 +41,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig, 'tumblr')
+    //provideFirebaseApp(()=> initializeApp(environment.firebaseConfig, 'tumblr'))
   ],
   providers: [],
   bootstrap: [AppComponent]

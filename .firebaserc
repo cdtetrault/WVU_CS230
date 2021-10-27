@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tumblr-3a8a4": {
+      "hosting": {
+        "tumblr": [
+          "tumblr-3a8a4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tumblr-3a8a4"
+  }
+}
