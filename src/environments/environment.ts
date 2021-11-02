@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  firebaseConfig:{
+  firebase:{
     apiKey: "AIzaSyAkYlAyT4IzrXgczoNuGJw4SBhcQ8m0jho",
     authDomain: "tumblr-3a8a4.firebaseapp.com",
     databaseURL: "https://tumblr-3a8a4-default-rtdb.firebaseio.com",

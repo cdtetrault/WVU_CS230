@@ -19,8 +19,8 @@ import { EditUserInfoComponent } from './body/edit-user-info.component';
 import { FormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
-import { provideFirebaseApp } from '@angular/fire/app';
-import { initializeApp } from '@firebase/app';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+
 
 
 @NgModule({
@@ -44,7 +44,7 @@ import { initializeApp } from '@firebase/app';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig, 'tumblr')
+    AngularFireModule.initializeApp(environment.firebase, 'tumblr')
     //provideFirebaseApp(()=> initializeApp(environment.firebaseConfig, 'tumblr'))
     //provideFirebaseApp(() => initializeApp(environment.firebase))
     //provideDatabase(() => getDatabase())
