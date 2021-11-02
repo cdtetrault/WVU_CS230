@@ -23,6 +23,6 @@ export class SearchPageService {
             ProfilePic: "pfp",
             ImagePath: "Picture post"
         }
-        return this.http.put(this.baseUrl, temp )
+        return this.http.post(this.baseUrl, temp )
     }
 }
