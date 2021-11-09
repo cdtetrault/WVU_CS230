@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { AuthComponent } from './auth/auth.component';
 
 
 
@@ -37,16 +38,17 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
     FollowingComponent,
     PostCardComponent,
     UserInfoComponent,
-    EditUserInfoComponent
+    EditUserInfoComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebase, 'tumblr')
+    AngularFireModule.initializeApp(environment.firebase, 'tumblr'),
     //provideFirebaseApp(()=> initializeApp(environment.firebaseConfig, 'tumblr'))
-    //provideFirebaseApp(() => initializeApp(environment.firebase))
+    provideFirebaseApp(() => initializeApp(environment.firebase))
     //provideDatabase(() => getDatabase())
   ],
   providers: [],
